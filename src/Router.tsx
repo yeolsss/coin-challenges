@@ -5,9 +5,10 @@ import Coin from './routes/Coin';
 import Coins from './routes/Coins';
 import Price from './routes/Price';
 
+console.log(import.meta.env.BASE_URL);
 function Router() {
   return (
-    <BrowserRouter basename={import.meta.env.PUBLIC_URL}>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Coins />} />
         <Route path="/:coinId" element={<Coin />}>
