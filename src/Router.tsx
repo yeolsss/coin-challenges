@@ -5,6 +5,7 @@ import Coin from './routes/Coin';
 import Coins from './routes/Coins';
 import Price from './routes/Price';
 
+console.log('default url= ', import.meta.env.BASE_URL);
 function Router() {
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
