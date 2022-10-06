@@ -397,6 +397,11 @@
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.0.1.tgz#88d7ac31811ab0cef14aaaeae2a0474923b278bc"
   integrity sha512-eBV5rvW4dRFOU1eajN7FmYxjAIVz/mRHgUE9En9mBn6m3mulK3WTR5C3iQhL9MZ14rWAq+xOlEaCkDiW0/heOg==
 
+"@remix-run/router@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.0.2.tgz#1c17eadb2fa77f80a796ad5ea9bf108e6993ef06"
+  integrity sha512-GRSOFhJzjGN+d4sKHTMSvNeUPoZiDHWmRnXfzaxrqe7dE/Nzlc8BiMSJdLDESZlndM7jIUrZ/F4yWqVYlI0rwQ==
+
 "@types/history@^4.7.11":
   version "4.7.11"
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.11.tgz#56588b17ae8f50c53983a524fc3cc47437969d64"
@@ -1370,7 +1375,7 @@ fast-diff@^1.1.2:
   resolved "https://registry.yarnpkg.com/fast-diff/-/fast-diff-1.2.0.tgz#73ee11982d86caaf7959828d519cfe927fac5f03"
   integrity sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==
 
-fast-glob@^3.2.9:
+fast-glob@^3.2.11, fast-glob@^3.2.9:
   version "3.2.12"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.12.tgz#7f39ec99c2e6ab030337142da9e0c18f37afae80"
   integrity sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w==
@@ -2186,6 +2191,13 @@ react-router@6.4.1:
   dependencies:
     "@remix-run/router" "1.0.1"
 
+react-router@^6.4.2:
+  version "6.4.2"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.4.2.tgz#300628ee9ed81b8ef1597b5cb98b474efe9779b8"
+  integrity sha512-Rb0BAX9KHhVzT1OKhMvCDMw776aTYM0DtkxqUBP8dNBom3mPXlfNs76JNGK8wKJ1IZEY1+WGj+cvZxHVk/GiKw==
+  dependencies:
+    "@remix-run/router" "1.0.2"
+
 react-side-effect@^2.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.2.tgz#dc6345b9e8f9906dc2eeb68700b615e0b4fe752a"
@@ -2274,10 +2286,10 @@ rimraf@3.0.2, rimraf@^3.0.2:
   dependencies:
     glob "^7.1.3"
 
-rollup@~2.78.0:
-  version "2.78.1"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.78.1.tgz#52fe3934d9c83cb4f7c4cb5fb75d88591be8648f"
-  integrity sha512-VeeCgtGi4P+o9hIg+xz4qQpRl6R401LWEXBmxYKOV4zlF82lyhgh2hTZnheFUbANE8l2A41F458iwj2vEYaXJg==
+rollup@2.74.1, rollup@~2.78.0:
+  version "2.74.1"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.74.1.tgz#4fba0ff1c312cc4ee82691b154eee69a0d01929f"
+  integrity sha512-K2zW7kV8Voua5eGkbnBtWYfMIhYhT9Pel2uhBk2WO5eMee161nPze/XRfvEQPFYz7KgrCCnmh2Wy0AMFLGGmMA==
   optionalDependencies:
     fsevents "~2.3.2"
 
@@ -2598,6 +2610,21 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
+
+vite-plugin-commonjs@^0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/vite-plugin-commonjs/-/vite-plugin-commonjs-0.5.2.tgz#32340075bbe772aadea9addfe5dc309dcccb1515"
+  integrity sha512-UgkGCCBnVnFAkBvbUTFYmHEwp7fiLTOKXR8/Ws4s/bFggWfVYi21Wi5TDceokcvhUjTZAOcm8/smNH0wIwXw3w==
+  dependencies:
+    fast-glob "^3.2.11"
+    vite-plugin-dynamic-import "^0.9.9"
+
+vite-plugin-dynamic-import@^0.9.9:
+  version "0.9.9"
+  resolved "https://registry.yarnpkg.com/vite-plugin-dynamic-import/-/vite-plugin-dynamic-import-0.9.9.tgz#0894840793a7c3a86f7bb3301b12b442dedb5760"
+  integrity sha512-EI+VHRd5nRj/0X6V70jfIhOyNx/S4c4VkjttTuRp2pMn5tuS/XtdjI5TTiekDmcaCXyZldvuu7kWBSb6CuIIGg==
+  dependencies:
+    fast-glob "^3.2.11"
 
 vite-tsconfig-paths@^3.5.1:
   version "3.5.1"
