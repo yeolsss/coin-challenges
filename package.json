@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "yarn run build"
   },
   "dependencies": {
     "@types/node": "^18.8.2",
@@ -46,5 +48,6 @@
     "typescript": "^4.6.4",
     "vite": "^3.1.0",
     "vite-tsconfig-paths": "^3.5.1"
-  }
+  },
+  "homepage": "https://yeolsss.github.io/coin-challenges"
 }
