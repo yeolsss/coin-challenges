@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Chart from './routes/Chart';
-import Coin from './routes/coin';
+import Coin from './routes/Coin';
 import Coins from './routes/Coins';
 import Price from './routes/Price';
 
